@@ -1,4 +1,4 @@
-package basic.typecasting;
+package basic.operator;
 
 public class AssignmentOperator {
     public static void main(String[] args) {

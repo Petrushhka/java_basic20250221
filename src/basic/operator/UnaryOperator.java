@@ -1,4 +1,4 @@
-package basic.typecasting;
+package basic.operator;
 
 public class UnaryOperator {
     public static void main(String[] args) {
