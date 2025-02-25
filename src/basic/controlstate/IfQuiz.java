@@ -1,4 +1,4 @@
-package basic.begin;
+package basic.controlstate;
 
 import java.util.Scanner;
 
@@ -21,6 +21,7 @@ public class IfQuiz {
         int num2 = sc.nextInt();
         System.out.println("세번째 수를 입력하세요");
         int num3 = sc.nextInt();
+
 
         if (num1 == num2 || num1 == num3 || num2 == num3){
             System.out.println("숫자가 중복되면 안됩니다.");

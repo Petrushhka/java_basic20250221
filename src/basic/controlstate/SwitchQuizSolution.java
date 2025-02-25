@@ -1,8 +1,9 @@
-package basic.begin;
+package basic.controlstate;
 
+import javax.naming.spi.DirStateFactory;
 import java.util.Scanner;
 
-public class SwitchQuiz {
+public class SwitchQuizSolution {
     public static void main(String[] args) {
 
         /*
@@ -19,32 +20,37 @@ public class SwitchQuiz {
         System.out.println("정수를 입력해주세용: ");
         int num1 = sc.nextInt();
         System.out.println("계산할 부등호를 넣어주세용: ");
-        String add = sc.next();
+        String operator = sc.next();
         System.out.println("대입할 수를 넣어주세용: ");
         int num2 = sc.nextInt();
 
-        switch(add){
-            default:
-                System.out.println("부등호가 잘못입력됐습니다.");
-                break;
+        int result = 0;
+        boolean flag = false;
+
+        switch (operator) {
             case "+":
-                System.out.println(num1+num2);
+                result = num1 + num2;
                 break;
-                case "-":
-                System.out.println(num1-num2);
+            case "-":
+                result = num1 - num2;
                 break;
-                case "*":
-                System.out.println(num1*num2);
+            case "*":
+                result = num1 * num2;
                 break;
-                case "/":
-                if(num2 == 0){
-                    System.out.println("나누는 숫자는 0이 될 수 없습니다.");
-                }else {
-                    System.out.println(num1/num2);
-                }
+            case "/":
+                if (num2 == 0) {
+                    System.out.println("연산할 수 없는 입력값 입니다.");
+                    flag = true;
                     break;
+                }
+                result = num1 / num2;
+                break;
+            default:
+                System.out.println("연산 기호를 정확하게 입력하세요.");
+        };
+
+        if (!flag) {
+            System.out.printf("%d %s %d = %d\n", num1, operator, num2, result);
         }
-
-
     }
 }
