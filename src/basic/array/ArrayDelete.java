@@ -15,6 +15,7 @@ public class ArrayDelete {
 //        numbers[4] = numbers[5]; // 1, 3, 7, 9, 11, 11
 //        numbers[5] = numbers[6]; (x)
 
+
         // 지우고자 하는 타겟 인덱스를 기준으로 뒤에 있는 값을 한 칸씩 땡겨오기 (마지막 데이터 전까지)
 
         for (int i = targetIndex; i < numbers.length-1; i++) {

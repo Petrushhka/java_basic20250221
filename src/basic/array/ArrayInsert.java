@@ -17,7 +17,9 @@ public class ArrayInsert {
         int[] temp = new int[arr.length+1];
 
         // 2. 기존데이터를 새 배열에 복사
+
         for (int i = 0; i < arr.length-1; i++) {
+
             temp[i] = arr[i];
         }
         // 3. 삽입 위치에서 데이터를 뒤로 한 칸씩 이동시킴.
