@@ -6,7 +6,7 @@ public class ForExample {
     public static void main(String[] args) {
 
         int total = 0;
-        for(int j = 1; j<=10; j++){
+        for(int j = 1; j<=10; j++){ //(begin / end /step)
             total += j;
         };
 
@@ -26,12 +26,11 @@ public class ForExample {
         Scanner sc = new Scanner(System.in);
         System.out.println("팩토리얼할 수: ");
         int k = sc.nextInt();
-        int n = 0;
+        int fac = 1; // 팩토리얼 최종 값을 담을 변수
 
-        for(int i = 1; i <= k ; k--){
-
-            n = k*i;
-            System.out.println(n);
-        }
+        for(int i = k; i >= 1 ; k--){
+            fac *= i;
+        };
+            System.out.println(fac);
     }
 }
