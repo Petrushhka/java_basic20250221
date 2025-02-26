@@ -16,31 +16,34 @@ public class ArrayQuiz01 {
             5. 새로운 음식명을 마지막 위치에 추가한다.
          */
 
-        while(true){
         Scanner sc = new Scanner(System.in);
         System.out.println("어떤 음식 드실래용??: ");
         String foodName = sc.next();
-        int count = 0; // sc가 입력될 때마다 1씩 증가해야함
+
 
 
 
         if(foodName.equals("그만")){
             System.out.println("종료하겠습니다~");
-            break;
-        }else{
-            String[] food = new String[0];
-            String[] temp = new String[food.length+1]; // 푸드보다 한개 큰
 
-            for(int i = 0; i < food.length; i++){
-                temp[i] = food[i];
+        }
+
+        else{
+            String[] foods = new String[1];
+            String[] temp = new String[foods.length+1]; // 푸드보다 한개 큰
+
+            for(int i = 0; i < foods.length; i++){
+                temp[i] = foods[i];
             };
 
            temp[temp.length-1] = foodName;
 
-           food = temp;
+
+
+           foods = temp;
            temp = null;
 
-           System.out.println(Arrays.toString(food));
+           System.out.println(Arrays.toString(foods));
 
             }
         sc.close();
@@ -50,4 +53,4 @@ public class ArrayQuiz01 {
 
 
 
-    }
+
