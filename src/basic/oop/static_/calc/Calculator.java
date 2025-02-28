@@ -30,7 +30,7 @@ public class Calculator {
      */
     public static double calcAreaCircle(int r) {
         double pi1 = Math.PI;
-        return r * r * pi;
+        return r * r ;
     }
 
 
