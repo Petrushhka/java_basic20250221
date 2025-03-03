@@ -19,7 +19,7 @@ public class Main {
         int menu = sc.nextInt();
 
         if(menu == 1){
-            gc = new KeyboardController();
+//            gc = new KeyboardController();
         }else if(menu == 2){
             gc = new JoystickController();
         }else {
@@ -27,9 +27,9 @@ public class Main {
         }
 
 
-        gc.moveCharecter("위");
-        gc.action();
-        gc.pasue();
+//        gc.moveCharecter("위");
+//        gc.action();
+//        gc.pasue();
 
 
     }
