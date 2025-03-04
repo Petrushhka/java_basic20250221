@@ -3,36 +3,41 @@ package basic.oop.homework.encapquiz;
 public class Main {
     public static void main(String[] args) {
 
-//        // BankAccount 클래스 테스트
-//        BankAccount myAccount = new BankAccount("123-456-789", "김철수", 10000);
-//        System.out.println("현재 잔액: " + myAccount.getBalance());
-//        myAccount.deposit(50000);
-//        System.out.println("입금 후 잔액: " + myAccount.getBalance()); // 60000 출력
-//        myAccount.withdraw(20000);
-//        System.out.println("출금 후 잔액: " + myAccount.getBalance()); // 40000 출력
+        // BankAccount 클래스 테스트
+        BankAccount myAccount = new BankAccount("123-456-789", "김철수", 10000);
+        System.out.println("현재 잔액: " + myAccount.getBalance());
+        myAccount.deposit(50000);
+        System.out.println("입금 후 잔액: " + myAccount.getBalance()); // 60000 출력
+        myAccount.withdraw(20000);
+        System.out.println("출금 후 잔액: " + myAccount.getBalance()); // 40000 출력
 
-//        // PasswordManager 클래스 테스트
-//        PasswordManager pm = new PasswordManager("oldPassword123");
-//        boolean isChanged = pm.changePassword("oldPassword123", "newPassword123");
-//        System.out.println("Password changed: " + isChanged); // true
+        System.out.println("====================================================");
 
-//        // Student 클래스 테스트
-//        Student student = new Student();
-//        student.setName("박영희");
-//        student.setStudentId(001);
-//        student.setDepartment("Computer Science");
-//        System.out.println("학생 이름: " + student.getName());
-//        System.out.println("학번: " + student.getStudentId());
-//        System.out.println("전공: " + student.getDepartment());
+        // PasswordManager 클래스 테스트
+        PasswordManager pm = new PasswordManager("oldPassword123");
+        boolean isChanged = pm.changePassword("oldPassword123", "newPassword123");
+        System.out.println("Password changed: " + isChanged); // true
+        System.out.println("====================================================");
 
-//        // Car 클래스 테스트
-//        Car myCar = new Car();
-//        myCar.setBrand("현대");
-//        myCar.setModel("그랜져");
-//        myCar.setYear(2020);
-//        System.out.println("Car Brand: " + myCar.getBrand());
-//        System.out.println("Car Model: " + myCar.getModel());
-//        System.out.println("Car Year: " + myCar.getYear());
+        // Student 클래스 테스트
+        Student student = new Student();
+        student.setName("박영희");
+        student.setStudentId(001);
+        student.setDepartment("Computer Science");
+        System.out.println("학생 이름: " + student.getName());
+        System.out.println("학번: " + student.getStudentId());
+        System.out.println("전공: " + student.getDepartment());
+        System.out.println("====================================================");
+
+        // Car 클래스 테스트
+        Car myCar = new Car();
+        myCar.setBrand("현대");
+        myCar.setModel("그랜져");
+        myCar.setYear(2020);
+        System.out.println("Car Brand: " + myCar.getBrand());
+        System.out.println("Car Model: " + myCar.getModel());
+        System.out.println("Car Year: " + myCar.getYear());
+        System.out.println("====================================================");
 
 
         Product product = new Product();

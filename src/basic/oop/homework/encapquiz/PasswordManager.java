@@ -1,6 +1,7 @@
 package basic.oop.homework.encapquiz;
 
 public class PasswordManager {
+
     private String password;
 
     PasswordManager(String password){
@@ -10,8 +11,11 @@ public class PasswordManager {
     boolean changePassword(String old, String newp){
         if(!old.equals(newp)){
             this.password = newp;
+            return true;
+        }else{
+            return false;
         }
-        return true;
+
     };
 
 

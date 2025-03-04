@@ -7,28 +7,31 @@ public class Student {
     private String department;
 
     public void setName(String name){
-        if(name != null){
+        if(name != null && name.equals("")){
             this.name = name;
         }
         else{
             System.out.println("다시 입력하세요.");
+            return;
         }
     }
 
     public void setStudentId(int num){
-        if(num != 0){
+        if(num != 0 ){
             this.studentId = num;
         }
         else{
             System.out.println("다시 입력하세요");
+            return;
         }
     }
 
     public void setDepartment(String department){
-        if(department != null){
+        if(department != null && department.equals("")){
             this.department = department;
         }else{
             System.out.println("다시 입력하세요.");
+            return;
         }
     }
 

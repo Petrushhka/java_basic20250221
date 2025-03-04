@@ -22,11 +22,14 @@ public class Product {
         this.price = price;
     }
 
-    public void reduceStock(int num){
-        if(num > 0){
+    public void reduceStock(int num) {
+        if (num > 0) {
             this.stock -= num;
+        } else {
+            System.out.println("잘못된 수량입니다!");
+            return;
         }
-    }
+    };
 
     public int getStock() {
         return stock;

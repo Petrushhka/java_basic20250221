@@ -1,9 +1,9 @@
 package basic.oop.homework.quiz;
 
-public class ComputerPart extends Computer{
+public class ComputerPart {
 
-    String partName; // 부품이름
-    int partPrice; // 부품가격
+    protected String partName; // 부품이름
+    protected int partPrice; // 부품가격
 
     ComputerPart(String partName, int partPrice){
         this.partName = partName;
